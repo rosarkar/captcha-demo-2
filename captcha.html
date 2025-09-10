@@ -920,12 +920,14 @@
         function proceedToContent() {
             // Clear any timers
             if (redirectTimer) clearInterval(redirectTimer);
-            
-            // In production, this would redirect to the actual content
-            alert('Redirecting to premium content... (In production, this would navigate to the protected content)');
-            
-            // Example redirect:
-            // window.location.href = '/premium-content';
+    
+            // Notify parent window if in iframe
+            if (window.parent !== window) {
+                window.parent.postMessage('captcha_success', '*');
+            } else {
+                // If opened directly, redirect
+                window.location.href = 'https://rosarkar.github.io/canvas-website/';
+            }
         }
 
         // Background particles
