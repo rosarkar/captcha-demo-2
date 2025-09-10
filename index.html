@@ -666,12 +666,17 @@
         function unlockContent() {
             // Hide locked content
             document.getElementById('lockedContent').style.display = 'none';
-            
+    
             // Show unlocked content
             document.getElementById('unlockedContent').classList.add('active');
-            
+    
             // Add celebration effect
             confetti();
+    
+            // Redirect after a short delay to show the success message
+            setTimeout(() => {
+                window.location.href = 'https://rosarkar.github.io/canvas-website/';
+            }, 2000); // 2 second delay
         }
 
         function confetti() {
