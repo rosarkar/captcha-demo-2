@@ -9,7 +9,7 @@ An innovative gamified CAPTCHA system that combines security with user engagemen
 - 🧠 Psychological engagement patterns
 
 ## Demo
-[Live Demo](https://yourusername.github.io/captcha-demo/)
+[Live Demo](https://rosarkar.github.io/captcha-demo-2)
 
 ## How It Works
 1. Users click to unlock premium content
