@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Content Access - CryptoVault Demo</title>
+    <title>Premium Content Access - TechDaily News</title>
     <style>
         * {
             margin: 0;
@@ -27,8 +27,8 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            opacity: 0.1;
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            opacity: 0.08;
         }
 
         .background::before {
@@ -39,9 +39,9 @@
             width: 100%;
             height: 100%;
             background-image: 
-                radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.3) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.3) 0%, transparent 50%),
-                radial-gradient(circle at 40% 20%, rgba(240, 147, 251, 0.2) 0%, transparent 50%);
+                radial-gradient(circle at 20% 50%, rgba(37, 99, 235, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(124, 58, 237, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(59, 130, 246, 0.2) 0%, transparent 50%);
             animation: float 20s ease-in-out infinite;
         }
 
@@ -74,7 +74,7 @@
         .logo {
             font-size: 24px;
             font-weight: 800;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -93,7 +93,7 @@
         }
 
         .nav-links a:hover {
-            color: #667eea;
+            color: #2563eb;
         }
 
         /* Main Content Area */
@@ -119,7 +119,7 @@
             width: 100px;
             height: 100px;
             margin: 0 auto 30px;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(124, 58, 237, 0.2));
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -129,15 +129,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.4); }
-            50% { transform: scale(1.05); box-shadow: 0 0 0 30px rgba(102, 126, 234, 0); }
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }
+            50% { transform: scale(1.05); box-shadow: 0 0 0 30px rgba(37, 99, 235, 0); }
         }
 
         .locked-title {
             font-size: 36px;
             font-weight: 700;
             margin-bottom: 16px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -179,7 +179,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, transparent, rgba(102, 126, 234, 0.1));
+            background: linear-gradient(135deg, transparent, rgba(37, 99, 235, 0.1));
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -190,7 +190,7 @@
 
         .preview-card:hover {
             transform: translateY(-5px);
-            border-color: rgba(102, 126, 234, 0.3);
+            border-color: rgba(37, 99, 235, 0.3);
         }
 
         .card-icon {
@@ -223,7 +223,7 @@
 
         /* Unlock Button */
         .unlock-button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
             color: white;
             border: none;
             padding: 18px 48px;
@@ -234,13 +234,13 @@
             transition: all 0.3s ease;
             text-transform: uppercase;
             letter-spacing: 1px;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
             display: inline-block;
         }
 
         .unlock-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 15px 40px rgba(37, 99, 235, 0.4);
         }
 
         /* CAPTCHA Modal */
@@ -317,8 +317,8 @@
         }
 
         .success-banner {
-            background: linear-gradient(135deg, rgba(0, 255, 163, 0.1), rgba(0, 204, 130, 0.1));
-            border: 1px solid rgba(0, 255, 163, 0.3);
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(21, 128, 61, 0.1));
+            border: 1px solid rgba(34, 197, 94, 0.3);
             border-radius: 12px;
             padding: 20px;
             margin-bottom: 40px;
@@ -327,12 +327,12 @@
         }
 
         @keyframes glow {
-            0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 163, 0.2); }
-            50% { box-shadow: 0 0 30px rgba(0, 255, 163, 0.4); }
+            0%, 100% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.2); }
+            50% { box-shadow: 0 0 30px rgba(34, 197, 94, 0.4); }
         }
 
         .success-banner h2 {
-            color: #00ffa3;
+            color: #22c55e;
             font-size: 24px;
             margin-bottom: 8px;
         }
@@ -360,14 +360,14 @@
 
         .content-card:hover {
             transform: translateY(-5px);
-            border-color: rgba(102, 126, 234, 0.3);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+            border-color: rgba(37, 99, 235, 0.3);
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
         }
 
         .content-image {
             width: 100%;
             height: 200px;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(124, 58, 237, 0.2));
             display: flex;
             align-items: center;
             justify-content: center;
@@ -401,8 +401,8 @@
         }
 
         .meta-tag {
-            background: rgba(102, 126, 234, 0.2);
-            color: #667eea;
+            background: rgba(37, 99, 235, 0.2);
+            color: #3b82f6;
             padding: 4px 12px;
             border-radius: 20px;
             font-size: 12px;
@@ -439,7 +439,7 @@
             height: 20px;
             border: 3px solid rgba(255, 255, 255, 0.3);
             border-radius: 50%;
-            border-top-color: #667eea;
+            border-top-color: #2563eb;
             animation: spin 1s ease-in-out infinite;
         }
 
@@ -455,12 +455,13 @@
     <!-- Header -->
     <header class="header">
         <div class="header-container">
-            <div class="logo">CryptoVault Pro</div>
+            <div class="logo">TechDaily News</div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Trading</a></li>
-                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Latest</a></li>
+                    <li><a href="#">AI & ML</a></li>
+                    <li><a href="#">Blockchain</a></li>
+                    <li><a href="#">Hardware</a></li>
                     <li><a href="#">Premium</a></li>
                 </ul>
             </nav>
@@ -472,81 +473,112 @@
         <!-- Locked Content Section -->
         <div class="locked-content" id="lockedContent">
             <div class="lock-icon">🔒</div>
-            <h1 class="locked-title">Premium Trading Intelligence</h1>
+            <h1 class="locked-title">Latest Tech News</h1>
             <p class="locked-subtitle">
-                Unlock exclusive market analysis, AI-powered signals, and advanced trading strategies used by top crypto traders.
+                Quick verification required to access our latest technology coverage and analysis.
             </p>
 
             <!-- Preview Cards -->
             <div class="preview-grid">
                 <div class="preview-card">
-                    <div class="card-icon">📊</div>
-                    <h3 class="card-title">Real-Time Analytics</h3>
-                    <p class="card-description">
-                        Advanced market indicators and predictive models that analyze over 10,000 data points per second.
-                    </p>
-                    <div class="blur-overlay"></div>
-                </div>
-                <div class="preview-card">
                     <div class="card-icon">🤖</div>
-                    <h3 class="card-title">AI Trading Signals</h3>
+                    <h3 class="card-title">AI Infrastructure Report</h3>
                     <p class="card-description">
-                        Machine learning algorithms that identify profitable opportunities before the market moves.
+                        Inside look at the compute clusters powering the next generation of foundation models, with cost analysis and performance benchmarks.
                     </p>
                     <div class="blur-overlay"></div>
                 </div>
                 <div class="preview-card">
-                    <div class="card-icon">💎</div>
-                    <h3 class="card-title">Exclusive Alpha</h3>
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">Semiconductor Deep Dive</h3>
                     <p class="card-description">
-                        Early access to new tokens, private sales, and insider information from industry leaders.
+                        TSMC's 2nm process node explained: what it means for chip performance, power efficiency, and the AI hardware race.
+                    </p>
+                    <div class="blur-overlay"></div>
+                </div>
+                <div class="preview-card">
+                    <div class="card-icon">🔐</div>
+                    <h3 class="card-title">Cybersecurity Briefing</h3>
+                    <p class="card-description">
+                        Emerging threat vectors in 2025: zero-day exploits, supply chain attacks, and the evolving landscape of digital security.
                     </p>
                     <div class="blur-overlay"></div>
                 </div>
             </div>
 
             <button class="unlock-button" onclick="showCaptcha()">
-                Unlock Premium Content
+                Continue to Site
             </button>
+            <p style="color: #666; font-size: 13px; margin-top: 20px;">
+                Verify you're human to access TechDaily News
+            </p>
         </div>
 
         <!-- Unlocked Content Section -->
         <div class="unlocked-content" id="unlockedContent">
             <div class="success-banner">
-                <h2>🎉 Welcome to CryptoVault Premium!</h2>
-                <p>You now have full access to all exclusive content and features.</p>
+                <h2>🎉 Welcome to TechDaily Premium!</h2>
+                <p>You now have full access to all exclusive content and in-depth analysis.</p>
             </div>
 
-            <h2 style="font-size: 32px; margin-bottom: 20px;">Premium Trading Intelligence</h2>
+            <h2 style="font-size: 32px; margin-bottom: 20px;">Premium Tech Insights</h2>
             <p style="color: #8892b0; margin-bottom: 40px;">
-                Explore cutting-edge analysis and strategies that give you an edge in the crypto markets.
+                Explore cutting-edge analysis and deep technical dives into the technologies shaping our future.
             </p>
 
             <div class="content-grid">
                 <div class="content-card">
-                    <div class="content-image">📈</div>
+                    <div class="content-image">🧠</div>
                     <div class="content-body">
-                        <h3 class="content-title">BTC Dominance Analysis</h3>
+                        <h3 class="content-title">The New AI Architecture Wars</h3>
                         <p class="content-text">
-                            Deep dive into Bitcoin's market dominance patterns and what they mean for altcoin seasons. Our AI model predicts a 73% probability of...
+                            Transformer alternatives are emerging. We analyze five novel architectures that could reshape how we build foundation models, with performance comparisons across...
                         </p>
                         <div class="content-meta">
-                            <span class="meta-tag">Premium</span>
+                            <span class="meta-tag">AI/ML</span>
                             <span class="meta-date">2 hours ago</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="content-card">
-                    <div class="content-image">🔮</div>
+                    <div class="content-image">⚙️</div>
                     <div class="content-body">
-                        <h3 class="content-title">DeFi Yield Strategies</h3>
+                        <h3 class="content-title">Inside Google's TPU v6</h3>
                         <p class="content-text">
-                            Maximize your returns with our tested yield farming strategies. Current opportunities showing 40%+ APY with managed risk...
+                            Exclusive technical breakdown of Google's latest tensor processing unit. Performance benchmarks show 3x improvement in training efficiency for large language models...
                         </p>
                         <div class="content-meta">
-                            <span class="meta-tag">Elite</span>
-                            <span class="meta-date">4 hours ago</span>
+                            <span class="meta-tag">Hardware</span>
+                            <span class="meta-date">5 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="content-image">🔗</div>
+                    <div class="content-body">
+                        <h3 class="content-title">Blockchain Scaling Breakthrough</h3>
+                        <p class="content-text">
+                            New rollup architecture achieves 100,000 TPS on Ethereum testnet. We examine the technical innovations enabling this performance leap and implications for...
+                        </p>
+                        <div class="content-meta">
+                            <span class="meta-tag">Blockchain</span>
+                            <span class="meta-date">1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="content-image">🛡️</div>
+                    <div class="content-body">
+                        <h3 class="content-title">Zero Trust Architecture Guide</h3>
+                        <p class="content-text">
+                            Comprehensive implementation guide for enterprise zero trust security. Real-world case studies from Fortune 500 companies show average 60% reduction in breach incidents...
+                        </p>
+                        <div class="content-meta">
+                            <span class="meta-tag">Security</span>
+                            <span class="meta-date">3 hours ago</span>
                         </div>
                     </div>
                 </div>
@@ -554,55 +586,27 @@
                 <div class="content-card">
                     <div class="content-image">🚀</div>
                     <div class="content-body">
-                        <h3 class="content-title">Early Token Alerts</h3>
+                        <h3 class="content-title">Quantum Computing Update</h3>
                         <p class="content-text">
-                            3 new tokens launching next week with strong fundamentals. Our screening process identified potential 10x opportunities in...
+                            IBM's latest quantum processor achieves new qubit coherence records. Analysis of when quantum advantage becomes commercially viable for specific problem domains...
                         </p>
                         <div class="content-meta">
-                            <span class="meta-tag">Alpha</span>
+                            <span class="meta-tag">Quantum</span>
                             <span class="meta-date">6 hours ago</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="content-card">
-                    <div class="content-image">⚡</div>
+                    <div class="content-image">💾</div>
                     <div class="content-body">
-                        <h3 class="content-title">Flash Crash Indicators</h3>
+                        <h3 class="content-title">Storage Tech Evolution</h3>
                         <p class="content-text">
-                            Our proprietary system detected unusual whale activity. Risk indicators suggest defensive positioning for the next 48 hours...
+                            DNA data storage moves closer to commercial viability. Cost per terabyte drops below $1000 for the first time, opening new possibilities for long-term archival...
                         </p>
                         <div class="content-meta">
-                            <span class="meta-tag">Alert</span>
-                            <span class="meta-date">1 hour ago</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content-card">
-                    <div class="content-image">🏦</div>
-                    <div class="content-body">
-                        <h3 class="content-title">Institutional Flows</h3>
-                        <p class="content-text">
-                            Track where smart money is moving. Recent data shows accumulation in 3 specific sectors that historically precede...
-                        </p>
-                        <div class="content-meta">
-                            <span class="meta-tag">Exclusive</span>
-                            <span class="meta-date">3 hours ago</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content-card">
-                    <div class="content-image">🎯</div>
-                    <div class="content-body">
-                        <h3 class="content-title">Technical Breakouts</h3>
-                        <p class="content-text">
-                            5 charts showing imminent breakout patterns. Our backtesting shows 82% success rate when these formations complete...
-                        </p>
-                        <div class="content-meta">
-                            <span class="meta-tag">Trading</span>
-                            <span class="meta-date">30 mins ago</span>
+                            <span class="meta-tag">Storage</span>
+                            <span class="meta-date">8 hours ago</span>
                         </div>
                     </div>
                 </div>
@@ -632,9 +636,6 @@
             
             // Use the external CAPTCHA file
             iframe.src = './captcha.html';
-            
-            // If you're hosting locally, use a relative path instead:
-            // iframe.src = './captcha.html';
             
             // Clear wrapper and add iframe
             wrapper.innerHTML = '';
@@ -676,7 +677,7 @@
 
         function confetti() {
             // Simple confetti effect
-            const colors = ['#667eea', '#764ba2', '#f093fb', '#f5576c', '#00ffa3'];
+            const colors = ['#2563eb', '#7c3aed', '#3b82f6', '#8b5cf6', '#22c55e'];
             for (let i = 0; i < 50; i++) {
                 const confetti = document.createElement('div');
                 confetti.style.position = 'fixed';
